@@ -60,19 +60,25 @@ public class LoginFunctionality {
 //		
 //	}
 //	
-//	@Test
-//	public void verifyLogin_with_InValidUserName_And_ValidPassword() {
-//		WebDriver driver = new EdgeDriver();
-//		driver.manage().window().maximize();
-//		driver.get("https://hms.kareclouds.com/site/login");
-//		WebElement usenameFiled = driver.findElement(By.id("email"));
-//		WebElement passwordFiled = driver.findElement(By.id("password"));
-//		WebElement loginBtn = driver.findElement(By.xpath("//button[@type=\"submit\"]"));
-//		usenameFiled.sendKeys("sdvfr@gmail.com");
-//		passwordFiled.sendKeys("Admin@123");
-//		loginBtn.click();
-//		
-//	}
+	@Test
+	public void verifyLogin_with_InValidUserName_And_ValidPassword() {
+		WebDriver driver = new EdgeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://hms.kareclouds.com/site/login");
+		
+		WebElement usenameFiled = driver.findElement(By.cssSelector("input#username"));
+		
+		
+		
+		WebElement passwordFiled = driver.findElement(By.id("password"));
+		WebElement loginBtn = driver.findElement(By.cssSelector("button.btn"));
+		
+		
+		usenameFiled.sendKeys("sdvfr@gmail.com");
+		passwordFiled.sendKeys("Admin@123");
+		loginBtn.click();
+		
+	}
 //	
 //	@Test
 //	public void verifyLoginWithoutUsernameAndPassword() {
