@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test name="Test(failed)">
+    <classes>
+      <class name="testpages.MultipleAlerts">
+        <methods>
+          <include name="Alert2"/>
+          <include name="Alert1"/>
+          <include name="Alert3"/>
+        </methods>
+      </class> <!-- testpages.MultipleAlerts -->
+      <class name="testpages.productsExample">
+        <methods>
+          <include name="verifyProductsPageLink"/>
+        </methods>
+      </class> <!-- testpages.productsExample -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
